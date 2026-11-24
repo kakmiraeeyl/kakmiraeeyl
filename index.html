@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#50091f">
+<meta name="description" content="KAKMIRA Emas & Perak">
+<title>KAKMIRA | Emas &amp; Perak</title>
+<style>
+:root{--wine:#50091f;--wine-dark:#2b0612;--wine-mid:#74152f;--gold:#d9ad45;--gold-light:#ffe6a0;--cream:#fff9ed;--cream-deep:#f4e8d3;--ink:#40101d;--line:#e6d3b2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.45}a{color:inherit;text-decoration:none}button{font:inherit}
+.site-header{position:relative;z-index:5;background:linear-gradient(110deg,var(--wine-dark),var(--wine) 58%,#690e2a);color:#fff;box-shadow:0 5px 18px #26030d30}
+.head-main{max-width:1440px;margin:auto;min-height:100px;padding:12px clamp(18px,4vw,54px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:17px;min-width:0}.brand-mark{width:74px;height:72px;display:grid;place-items:center;position:relative;color:var(--gold-light);font:700 68px/1 Georgia,serif;text-shadow:0 2px 9px #e7b84d99}.brand-mark:before{content:"◆";position:absolute;top:-2px;font-size:22px;color:#ffe18a;text-shadow:0 1px 4px #d9ad45}.brand-name{font:700 clamp(25px,3.2vw,42px)/1 Georgia,serif;letter-spacing:.035em;color:var(--gold-light)}.brand-name small{display:block;margin-top:8px;font:700 14px/1.2 Arial,sans-serif;letter-spacing:.27em;color:#fff}
+.head-actions{display:flex;align-items:center;gap:22px}.wa-head{width:60px;height:60px;display:grid;place-items:center;color:var(--gold-light)}.wa-head svg{width:54px;height:54px;stroke:currentColor;fill:none;stroke-width:2.4}.menu-toggle{width:68px;height:62px;border:0;border-radius:13px;background:#fff;color:var(--wine);font-size:36px;line-height:1;cursor:pointer;box-shadow:0 3px 12px #17030a30}
+.nav{border-top:1px solid #ffffff45;border-bottom:1px solid #ffffff45}.nav-inner{max-width:1440px;margin:auto;display:flex;align-items:center;justify-content:space-around;gap:12px;padding:12px clamp(14px,3vw,44px)}.nav a{position:relative;color:#fff;font-weight:700;font-size:clamp(14px,1.7vw,21px);padding:5px 8px;white-space:nowrap}.nav a:first-child:after{content:"";position:absolute;left:0;right:0;bottom:-9px;height:4px;border-radius:5px;background:var(--gold)}.nav a:hover{color:var(--gold-light)}
+.hero{background:linear-gradient(180deg,#fffaf0 0%,#fff8ed 100%);padding:0}.hero-banner{display:block;width:100%;height:auto;max-height:none;aspect-ratio:8/3;object-fit:contain;object-position:center;background:var(--wine);border:0}.hero-title{max-width:1200px;margin:0 auto;padding:18px 18px 26px;text-align:center;font:700 clamp(32px,5.4vw,66px)/1.12 Georgia,serif;letter-spacing:-.025em;color:var(--wine)}.hero-title span{color:#b8892b}
+.services{padding:34px clamp(16px,3vw,40px) 42px;background:radial-gradient(ellipse at 50% 0%,#fffdf8 0,#fff9ed 62%,#f7eddc 100%)}.wrap{max-width:1280px;margin:auto}.section-title{display:flex;align-items:center;justify-content:center;gap:28px;margin:0 auto 24px;text-align:center}.section-title:before,.section-title:after{content:"";width:clamp(42px,11vw,120px);height:3px;border-radius:4px;background:linear-gradient(90deg,#e7c65e,#bd8c2c)}.section-title h2{margin:0;color:var(--wine);font:800 clamp(21px,3.3vw,36px)/1.2 Arial,sans-serif;letter-spacing:.055em}
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.feature{min-height:185px;padding:16px 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;text-align:center;border:1px solid #e4d1b1;border-radius:23px;background:linear-gradient(145deg,#fffdf7,#fff0d8);box-shadow:0 4px 10px #4a1b170d;transition:transform .18s ease,box-shadow .18s ease}.feature:hover,.feature:focus-visible{transform:translateY(-3px);box-shadow:0 9px 20px #4a1b171c;outline:none;border-color:#d5b56f}.feature-icon{width:82px;height:82px;margin-bottom:8px;border-radius:50%;display:grid;place-items:center;color:var(--gold-light);background:radial-gradient(circle at 35% 25%,#a71c43,var(--wine) 74%);box-shadow:inset 0 2px 8px #ffffff28,0 4px 10px #4b081b2c}.feature-icon svg{width:44px;height:44px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.feature strong{max-width:260px;color:#45101c;font-size:clamp(17px,2vw,23px);line-height:1.2;font-weight:800}.feature .arrow{position:absolute;right:15px;top:50%;transform:translateY(-50%);font-size:34px;color:var(--wine);font-weight:400}
+.info-toggle{width:100%;min-height:62px;margin-top:22px;padding:12px 24px;display:flex;align-items:center;gap:20px;text-align:left;border:1px solid #e0cba7;border-radius:18px;background:linear-gradient(100deg,#fff8e9,#fff0d5);color:#45101c;font-size:clamp(17px,2.1vw,24px);font-weight:800;box-shadow:0 5px 12px #5a2b160d;cursor:pointer}.info-icon{width:40px;height:40px;display:grid;place-items:center;border:3px solid var(--wine);border-radius:50%;font:700 26px/1 Georgia,serif}.info-plus{margin-left:auto;font-size:34px;font-weight:400;line-height:1}
+@media(max-width:760px){.head-main{min-height:76px;padding:8px 14px;gap:10px}.brand{gap:10px}.brand-mark{width:48px;height:49px;font-size:48px}.brand-mark:before{font-size:15px;top:-1px}.brand-name{font-size:25px}.brand-name small{font-size:9px;letter-spacing:.24em;margin-top:5px}.head-actions{gap:9px}.wa-head{width:43px;height:43px}.wa-head svg{width:40px;height:40px}.menu-toggle{width:47px;height:44px;border-radius:9px;font-size:26px}.nav{display:none}.nav.open{display:block}.nav-inner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 8px;padding:8px 12px 13px}.nav a{font-size:14px;padding:10px 5px;border-bottom:1px solid #ffffff20;white-space:normal}.nav a:first-child:after{bottom:0;height:3px;right:auto;width:42px}.hero-banner{max-height:none;aspect-ratio:8/3;object-fit:contain}.hero-title{padding:17px 12px 23px;font-size:clamp(30px,7.4vw,43px)}.services{padding:31px 15px 34px}.section-title{gap:12px;margin-bottom:20px}.section-title:before,.section-title:after{width:34px;height:2px}.section-title h2{font-size:clamp(17px,4.6vw,22px);letter-spacing:.04em}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.feature{min-height:165px;padding:13px 9px;border-radius:17px}.feature-icon{width:68px;height:68px;margin-bottom:8px}.feature-icon svg{width:37px;height:37px}.feature strong{font-size:clamp(14px,3.8vw,17px);max-width:175px}.feature .arrow{right:8px;font-size:25px}.info-toggle{min-height:56px;margin-top:17px;padding:9px 15px;gap:14px;border-radius:14px;font-size:17px}.info-icon{width:36px;height:36px;font-size:23px}.info-plus{font-size:29px}}
+@media(max-width:360px){.brand-name{font-size:21px}.head-actions{gap:5px}.feature{min-height:150px}.feature-icon{width:60px;height:60px}.feature strong{font-size:13px}.feature .arrow{right:6px;font-size:22px}.section-title{gap:8px}}
+
+/* Kandungan Empayar Emas YL: diletakkan selepas banner dan sebelum enam pilihan perkhidmatan */
+.company-details{padding:34px clamp(17px,4vw,52px) 22px;background:#fffdf9}
+.detail-wrap{max-width:1120px;margin:0 auto}
+.detail-block{padding:12px 0 34px}
+.eyebrow{margin:0 0 10px;color:#7b1733;font-size:12px;font-weight:800;letter-spacing:.2em}
+.detail-heading{margin:0 0 14px;color:#241c1d;font-size:clamp(25px,4vw,38px);line-height:1.16;letter-spacing:-.035em}
+.detail-copy{max-width:850px;margin:0 0 18px;color:#625d5a;font-size:clamp(15px,1.8vw,19px);line-height:1.75}
+.detail-points{display:grid;gap:10px;margin:18px 0 22px;padding:0;list-style:none;color:#393234}
+.detail-points li{display:flex;gap:12px;align-items:flex-start;font-size:clamp(14px,1.6vw,17px)}
+.detail-points li:before{content:"✓";color:#7b1733;font-weight:900;font-size:21px;line-height:1.1}
+.asset-card{max-width:700px;margin:22px auto 0;padding:10px;border:1px solid #eee3d3;border-radius:22px;background:#fff;box-shadow:0 10px 28px #4a1b170b;overflow:hidden}
+.asset-card img{display:block;width:100%;height:auto;border-radius:14px}
+.asset-caption{padding:9px 8px 3px;color:#74152f;font-weight:700;font-size:14px}
+.timeline{position:relative;display:grid;gap:18px;margin:24px 0 0;padding:0 0 0 28px;list-style:none}
+.timeline:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:#dfcfb5}
+.timeline li{position:relative;padding:0 0 2px}
+.timeline li:before{content:"";position:absolute;left:-27px;top:5px;width:13px;height:13px;border-radius:50%;background:#7b1733;border:3px solid #f6e9d2;box-shadow:0 0 0 1px #dfcfb5}
+.timeline time{display:block;margin-bottom:4px;color:#8b2340;font-size:12px;font-weight:800;letter-spacing:.06em}
+.timeline strong{display:block;color:#30272a;font-size:17px;margin-bottom:3px}
+.timeline p{margin:0;color:#716967;font-size:14px;line-height:1.6}
+.syariah-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+.fact{padding:16px;border:1px solid #eadfce;border-radius:15px;background:#fff}
+.fact small{display:block;margin-bottom:7px;color:#8b7767;font-size:10px;font-weight:800;letter-spacing:.15em}
+.fact strong{color:#34272a;font-size:15px}
+.syariah-actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
+.syariah-actions a{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid #e4d5c3;border-radius:12px;color:#74152f;font-weight:800;font-size:14px;background:#fff}
+.syariah-actions a.primary{background:#74152f;color:#fff;border-color:#74152f}
+.syariah-gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.syariah-gallery .asset-card{width:100%;margin:0}
+@media(max-width:760px){.company-details{padding:27px 17px 12px}.detail-block{padding-bottom:26px}.detail-heading{font-size:27px}.detail-copy{font-size:15px;line-height:1.7}.asset-card{border-radius:17px;padding:7px}.asset-card img{border-radius:11px}.timeline{gap:15px}.timeline strong{font-size:15px}.timeline p{font-size:13px}.syariah-facts{gap:9px}.fact{padding:12px}.fact strong{font-size:13px}.syariah-gallery{grid-template-columns:1fr;gap:12px}.syariah-actions a{font-size:13px}}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="head-main">
+    <a class="brand" href="#utama" aria-label="KAKMIRA Utama"><span class="brand-mark" aria-hidden="true">K</span><span class="brand-name">KAKMIRA<small>EMAS &amp; PERAK</small></span></a>
+    <div class="head-actions">
+      <a class="wa-head" href="https://wa.me/601158653916" target="_blank" rel="noopener" aria-label="WhatsApp KakMira"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5a18 18 0 0 0-15.5 27.2L6 42l10.1-2.4A18 18 0 1 0 24 5Z"/><path d="M18 16c.6-1 1.2-1 1.8-1s1 .1 1.4 1.1l1.5 3.5c.2.5.1.9-.2 1.3l-1.2 1.4c-.4.4-.4.8-.1 1.3 1.3 2.2 3 3.9 5.3 5 .5.2.9.2 1.2-.2l1.7-2c.4-.5.8-.5 1.3-.3l3.4 1.6c.6.3.9.6.8 1.2-.2 1.5-1 2.8-2.4 3.5-1.4.7-3.2.9-5.2.2-2.2-.7-4.8-2.2-7.2-4.5-2.5-2.3-4.3-5.1-5-7.3-.7-2.1-.4-3.9.7-5.8Z"/></svg></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <nav class="nav" id="mainNav" aria-label="Menu utama"><div class="nav-inner">
+    <a href="#utama">Utama</a><a href="#perkhidmatan">Perkhidmatan</a><a href="#perkhidmatan">Peluang Perniagaan</a><a href="#perkhidmatan">Promosi &amp; Acara</a><a href="https://wa.me/601158653916" target="_blank" rel="noopener">Hubungi Kami</a>
+  </div></nav>
+</header>
+<main>
+  <section class="hero" id="utama">
+    <img class="hero-banner" src="kakmira-brand.jpg" alt="Banner asal KAKMIRA EEYL bersama Kak Mira, emas dan perak">
+    <h1 class="hero-title">Kenali Nilai. <span>Bina Peluang.</span></h1>
+  </section>
+
+  <section class="company-details" aria-label="Maklumat Empayar Emas YL">
+    <div class="detail-wrap">
+      <section class="detail-block" id="kenali-empayar">
+        <p class="eyebrow">KENALI EMPAYAR EMAS YL</p>
+        <h2 class="detail-heading">Satu tempat untuk urusan emas anda.</h2>
+        <p class="detail-copy">Empayar Emas YL Sdn. Bhd. menyediakan platform jual beli emas dan perak serta perkhidmatan buyback. Pelanggan boleh menyemak produk, harga semasa dan mengurus urusan yang tersedia menerusi laman atau aplikasi EEYL.</p>
+        <ul class="detail-points">
+          <li>Pilihan emas fizikal, dinar, barang kemas dan perak.</li>
+          <li>Akses akaun dan semakan harga secara dalam talian.</li>
+          <li>Khidmat cawangan dan sokongan pelanggan.</li>
+        </ul>
+        <figure class="asset-card"><img src="empayar-logo-card.jpg" alt="Logo Empayar Emas, One Stop Gold Centre"><figcaption class="asset-caption">One Stop Gold Centre<br><span style="font-weight:400;color:#756d68">Jual • Beli • Simpan</span></figcaption></figure>
+        <figure class="asset-card"><img src="lokasi-cawangan-eeyl.jpg" alt="Infografik lokasi cawangan Empayar Emas YL"></figure>
+      </section>
+      <section class="detail-block" id="sejarah-eeyl">
+        <p class="eyebrow">LATAR BELAKANG EEYL</p>
+        <h2 class="detail-heading">Perjalanan sebuah jenama emas.</h2>
+        <p class="detail-copy">Ringkasan sejarah penubuhan dan perkembangan Empayar Emas YL berdasarkan infografik syarikat yang dikongsikan.</p>
+        <ol class="timeline">
+          <li><time>23 JUN 2020</time><strong>Permulaan operasi</strong><p>Ditubuhkan di bawah M.N Aiman Resources sebagai syarikat pembeli emas sahaja.</p></li>
+          <li><time>2021</time><strong>Langkah awal komuniti EBO</strong><p>Mula membimbing lapan EBO pertama.</p></li>
+          <li><time>2021</time><strong>Buyback lebih sistematik</strong><p>Memperkenalkan urus niaga belian balik emas secara lebih bersistem.</p></li>
+          <li><time>11 JANUARI 2023</time><strong>Empayar Emas YL</strong><p>Naik taraf kepada Empayar Emas YL.</p></li>
+          <li><time>OGOS 2023</time><strong>Produk dinar pertama</strong><p>Melancarkan produk pertama ¼ Dinar Mat Kilau.</p></li>
+        </ol>
+        <figure class="asset-card"><img src="sejarah-eeyl.jpg" alt="Infografik sejarah penubuhan EEYL"><figcaption class="asset-caption">Sejarah penubuhan EEYL</figcaption></figure>
+      </section>
+      <section class="detail-block" id="maklumat-syariah">
+        <p class="eyebrow">PENGESAHAN KEPATUHAN SYARIAH</p>
+        <h2 class="detail-heading">Maklumat syariah yang boleh dirujuk.</h2>
+        <p class="detail-copy">Menurut sijil yang dikongsikan, <strong>Elzar Shariah &amp; Technology Solutions Sdn. Bhd.</strong> telah menyemak struktur dan mekanisme transaksi EEYL dan mengesahkan Empayar Emas YL Sdn. Bhd. sebagai <strong>patuh syariah.</strong></p>
+        <div class="syariah-facts">
+          <div class="fact"><small>TARIKH KUAT KUASA</small><strong>16 Oktober 2026</strong></div>
+          <div class="fact"><small>TEMPOH DINYATAKAN</small><strong>Sehingga 15 Oktober 2028</strong></div>
+        </div>
+        <p class="detail-copy">Skop yang disebut meliputi operasi syarikat, urus niaga emas dan perak, My Asset (MyGold/MySilver), jual beli, buyback, simpanan, pemindahan, redeem dan struktur insentif EBO.</p>
+        <p class="detail-copy" style="font-size:13px">Sijil ini khusus untuk EEYL dan tertakluk kepada semakan serta notis lanjut daripada penasihat syariah. Rujuk dokumen penuh bagi butiran dan skop pengesahan.</p>
+        <div class="syariah-actions"><a class="primary" href="sijil-syariah.jpg" target="_blank" rel="noopener">Buka sijil penuh ↗</a><a href="infografik-syariah.jpg" target="_blank" rel="noopener">Lihat infografik syariah ↗</a></div>
+        <div class="syariah-gallery">
+          <figure class="asset-card"><a href="infografik-syariah.jpg" target="_blank" rel="noopener"><img src="infografik-syariah.jpg" alt="Infografik komitmen syariah dan tempoh sijil"></a><figcaption class="asset-caption">Infografik ringkasan syariah ↗</figcaption></figure>
+          <figure class="asset-card"><a href="sijil-syariah.jpg" target="_blank" rel="noopener"><img src="sijil-syariah.jpg" alt="Sijil kepatuhan syariah Empayar Emas YL Sdn Bhd"></a><figcaption class="asset-caption">Lihat sijil dengan lebih jelas ↗</figcaption></figure>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="services" id="perkhidmatan"><div class="wrap">
+    <div class="section-title"><h2>PERKHIDMATAN TERSEDIA</h2></div>
+    <div class="feature-grid">
+      <a class="feature" href="semak-harga.html"><span class="feature-icon"><svg viewBox="0 0 48 48"><path d="M5 31h13l-3 8H2zM19 31h13l-3 8H16zM12 19h13l-3 9H9zM27 19h13l-3 9H24zM19 7h13l-3 9H16z"/></svg></span><strong>Semak<br>Harga Emas &amp; Perak</strong><span class="arrow">›</span></a>
+      <a class="feature" href="beli-simpan.html"><span class="feature-icon"><svg viewBox="0 0 48 48"><path d="M4 7h5l5 25h24l5-18H12"/><path d="M17 20h23M19 26h19"/><circle cx="18" cy="39" r="2.5"/><circle cx="35" cy="39" r="2.5"/></svg></span><strong>BARANG KEMAS,<br>GOLDBAR, DINAR DAN<br>SILVER YANG AVAILABLE</strong><span class="arrow">›</span></a>
+      <a class="feature" href="jual-buyback.html"><span class="feature-icon"><svg viewBox="0 0 48 48"><path d="M7 25 25 7h15v15L22 40 7 25Z"/><circle cx="33" cy="14" r="2.5"/></svg></span><strong>Jual<br>Emas &amp; Perak</strong><span class="arrow">›</span></a>
+      <a class="feature" href="peluang-perniagaan.html"><span class="feature-icon"><svg viewBox="0 0 48 48"><circle cx="18" cy="15" r="6"/><circle cx="32" cy="17" r="5"/><path d="M5 37c0-7 5-12 13-12s13 5 13 12v3H5zM29 27c7-1 13 3 14 9v4H34"/></svg></span><strong>Peluang<br>Perniagaan</strong><span class="arrow">›</span></a>
+      <a class="feature" href="kalkulator-simpanan.html"><span class="feature-icon"><svg viewBox="0 0 48 48"><rect x="10" y="5" width="28" height="38" rx="4"/><rect x="15" y="10" width="18" height="7" rx="1"/><path d="M16 24h3M24 24h3M32 24h1M16 31h3M24 31h3M32 31h1M16 38h3M24 38h3M32 38h1"/></svg></span><strong>Kalkulator<br>Simpanan</strong><span class="arrow">›</span></a>
+      <a class="feature" href="lokasi-cawangan.html"><span class="feature-icon"><svg viewBox="0 0 48 48"><path d="M24 43s15-15 15-25A15 15 0 0 0 9 18c0 10 15 25 15 25Z"/><circle cx="24" cy="18" r="5"/></svg></span><strong>Lokasi HQ &amp;<br>Cawangan</strong><span class="arrow">›</span></a>
+    </div>
+    <div class="info-toggle" aria-label="Maklumat Lanjut"><span class="info-icon">i</span><span>Maklumat Lanjut</span><span class="info-plus">+</span></div>
+  </div></section>
+</main>
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const nav=document.getElementById('mainNav');
+menuToggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰';});
+nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰';}));
+</script>
+</body>
+</html>
